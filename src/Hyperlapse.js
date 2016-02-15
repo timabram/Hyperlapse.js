@@ -502,6 +502,12 @@ var Hyperlapse = function(container, params) {
 		render();
 	};
 
+
+	// save variables to local file:
+	csv()
+	.from(_point_index)
+	.to.path('C:/Users/Tim/Desktop/GoogleStreetView/test.csv');
+
 	// animates the playhead forward or backward depending on direction
 	var loop = function() {
 		drawMaterial();
